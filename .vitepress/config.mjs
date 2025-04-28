@@ -5,7 +5,7 @@ import { figure } from '@mdit/plugin-figure'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  base: '/xcloudx-wiki/',
+//  base: '/xcloudx-wiki/',
   lang: 'zh-CN',
   title: "XCloudX Wiki",
   description: "A VitePress Site",
