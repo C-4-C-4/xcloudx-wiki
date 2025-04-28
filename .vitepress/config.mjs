@@ -27,7 +27,7 @@ export default defineConfig({
 
   //网站标签栏图标
   head: [
-    ['link', { rel: 'icon', href: '/xcloudx-wiki/wiki-logo.webp' }]
+    ['link', { rel: 'icon', href: 'public/wiki-logo.webp' }]
   ],
 
  //多语言
