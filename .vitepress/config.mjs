@@ -115,7 +115,7 @@ export default defineConfig({
 
     //社交链接
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/C-4-C-4/xcloudx-wiki' }
     ],
     footer: {
       message: 'Released under the MIT License.',
