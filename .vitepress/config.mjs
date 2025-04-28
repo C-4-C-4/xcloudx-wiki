@@ -9,7 +9,7 @@ export default defineConfig({
   lang: 'zh-CN',
   title: "XCloudX Wiki",
   description: "A VitePress Site",
-  appearance:'dark',  //默认深色模式
+//  appearance:'dark',  //默认深色模式
 
   //使用 iconify-icon 组件 
    vue: { 
