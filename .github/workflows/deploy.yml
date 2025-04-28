@@ -22,7 +22,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0 # 如果未启用 lastUpdated，则不需要
       - name: Setup pnpm
@@ -40,12 +40,12 @@ jobs:
         run: pnpm install # 安装依赖
       - name: Build with VitePress
         run: |
-          pnpm run docs:build # 启动项目
+          pnpm run docs:dev # 启动项目
           touch .nojekyll  # 通知githubpages不要使用Jekyll处理这个站点，不知道为啥不生效，就手动搞了
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3  # 上传构建产物
         with:
-          path: .vitepress/dist # 指定上传的路径，当前是根目录，如果是docs需要加docs/的前缀
+          path: .vitepress/theme # 指定上传的路径，当前是根目录，如果是docs需要加docs/的前缀
 
   # 部署工作
   deploy:
