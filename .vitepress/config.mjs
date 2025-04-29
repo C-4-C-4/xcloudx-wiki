@@ -58,7 +58,7 @@ export default defineConfig({
 
     //编辑本页
     editLink: {
-      patte: 'https://github.com/C-4-C-4/xcloudx-wiki/tree/master/index:path',
+      pattern: 'https://github.com/C-4-C-4/xcloudx-wiki/tree/master/index:path',
       text: '在GitHub上编辑此页'
     },
 
