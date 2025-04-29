@@ -50,9 +50,16 @@ export default defineConfig({
       provider: 'local'
     },
 
+    //上下页标题
+    docFooter: {
+      prev: '上一页',
+      next: '下一页'
+    },
+
     //编辑本页
     editLink: {
-      pattern:'https://github.com/C-4-C-4/xcloudx-wiki:path'
+      patte: 'https://github.com/C-4-C-4/xcloudx-wiki/tree/master/index:path',
+      text: '在GitHub上编辑此页'
     },
 
     //顶部导航栏
