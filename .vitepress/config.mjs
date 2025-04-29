@@ -58,10 +58,18 @@ export default defineConfig({
 
     //编辑本页
     editLink: {
-      pattern: 'https://github.com/C-4-C-4/xcloudx-wiki/tree/master/index:path',
+      pattern: 'https://github.com/C-4-C-4/xcloudx-wiki/tree/master/:path',
       text: '在GitHub上编辑此页'
     },
 
+    //最后更新时间
+    lastUpdated: {
+      text: '最后更新于',
+      formatOptions: {
+        dateStyle: 'short', // 可选值full、long、medium、short
+        timeStyle: 'medium' // 可选值full、long、medium、short
+      },
+    },
     //顶部导航栏
     nav: [
       { text: '主页', link: '/' },
