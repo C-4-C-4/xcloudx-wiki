@@ -18,7 +18,7 @@ import { DocVideoLink } from '@theojs/lumen'
 
 import './style.css'
 import "./blur.css";
-import Confetti from "./Confetti.vue";
+import confetti from "./Confetti.vue";//引用纸屑组件
 import './var.css' //自定义组件 CSS 可以通过覆盖根级别的 CSS 变量来自定义默认主题的 CSS
 
 /** @type {import('vitepress').Theme} */
@@ -58,7 +58,8 @@ export default {
   } ,
 
   //首页背景动画组件
-  enhanceApp({ app, router }) {
-    app.component("Confetti", Confetti); //注册全局组件
+  enhanceApp(ctx) {
+    const { app } = ctx;
+    app.component("confetti", confetti);
   },
 }

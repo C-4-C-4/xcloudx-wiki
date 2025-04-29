@@ -25,6 +25,7 @@ features:
     details: 超多的新式家具，装饰自己家园
   - title: 星露谷扩展
     details: 星露谷的更多玩法，让你玩的更开心
-
 #  editLink: false
+
 ---
+<confetti />
