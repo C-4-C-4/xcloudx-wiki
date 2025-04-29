@@ -1,5 +1,9 @@
 import { defineConfig } from 'vitepress'
 
+// 引用评论组件
+import Layout from "./Layout.vue";
+
+
 //图片描述组件引用
 import { figure } from '@mdit/plugin-figure'
 
@@ -10,6 +14,12 @@ export default defineConfig({
   title: "XCloudX Wiki",
   description: "A VitePress Site",
 //  appearance:'dark',  //默认深色模式
+
+ Layout: () => {
+  return h(Layout, null, {
+    // https://vitepress.dev/guide/extending-default-theme#layout-slots
+  });
+  },
 
   //使用 iconify-icon 组件 
    vue: { 
