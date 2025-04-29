@@ -50,6 +50,11 @@ export default defineConfig({
       provider: 'local'
     },
 
+    //编辑本页
+    editLink: {
+      pattern:'https://github.com/C-4-C-4/xcloudx-wiki:path'
+    },
+
     //顶部导航栏
     nav: [
       { text: '主页', link: '/' },

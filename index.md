@@ -6,6 +6,7 @@ hero:
   name: "闲云Wiki"
   text: "最优秀的攻略文档"
   tagline: Welcome to the Xianyun Wiki
+  editLink: false
 
   image:
     src: /wiki-logo.webp
