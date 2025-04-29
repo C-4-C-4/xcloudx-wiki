@@ -3,6 +3,7 @@ import { defineConfig } from 'vitepress'
 //图片描述组件引用
 import { figure } from '@mdit/plugin-figure'
 
+
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
 //  base: '/xcloudx-wiki/',
