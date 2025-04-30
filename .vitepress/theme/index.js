@@ -5,7 +5,8 @@ import DefaultTheme from 'vitepress/theme'
 import '@theojs/lumen/theme' //lumen theme 主题导入
 
 // 引用评论组件
-//import Layout from "./Layout.vue";
+import giscusTalk from 'vitepress-plugin-comment-with-giscus';
+import { useData, useRoute } from 'vitepress';
 
 //分享组件引用
 import { ShareButton } from '@theojs/lumen'
@@ -27,11 +28,27 @@ export default {
   extends: DefaultTheme,
 
   //评论组件
-//  Layout: () => {
-//  return h(Layout, null, {
-      // https://vitepress.dev/guide/extending-default-theme#layout-slots
-//    })
-//  },
+  setup() {
+    const { frontmatter } = useData();
+    const route = useRoute();
+    giscusTalk({
+      repo: 'C-4-C-4/xcloudx-wiki', //仓库
+      repoId: 'R_kgDOOhCrvw', //仓库ID
+      category: 'Announcements', // 讨论分类
+      categoryId: 'DIC_kwDOOhCrv84Cpk0i', //讨论分类ID
+      mapping: 'pathname',
+      inputPosition: 'top',
+      lang: 'zh-CN',
+      }, 
+      {
+        frontmatter, route
+      },
+      //默认值为true，表示已启用，此参数可以忽略；
+      //如果为false，则表示未启用
+      //您可以使用“comment:true”序言在页面上单独启用它
+      true
+    );
+  },
 
   
   enhanceApp({ app, router, siteData }) {
