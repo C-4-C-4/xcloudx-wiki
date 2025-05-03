@@ -139,8 +139,8 @@ export default defineConfig({
       { icon: 'github', link: 'https://github.com/C-4-C-4/xcloudx-wiki' }
     ],
     footer: {
-      message: '<a href="https://www.govs.cc/id.php?keyword=20252025" target="_blank">嘣ICP备20252025号</a>',
-      copyright: 'Copyright © 2024-present XCloudX'
+      message: '<a href="https://icp.govs.xin/id.php?keyword=20252025" target="_blank">信ICP备20252025号</a>',
+      copyright: '<a href="https://www.govs.cc/id.php?keyword=20252025" target="_blank">嘣ICP备20252025号</a>',
     }
   }
 })
